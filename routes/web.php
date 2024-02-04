@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/update-total', [App\Http\Controllers\HomeController::class, 'updateTotal'])->name('updateTotal');
